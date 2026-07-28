@@ -15,6 +15,19 @@ class Bee
         q = a/b;
         r = a%b;
 
+        if (r < 0)
+{
+    if (b > 0)
+    {
+        q--;
+        r += b;
+    }
+    else
+    {
+        q++;
+        r -= b;
+    }
+}
         Console.WriteLine("{0} {1}\n", q, r);
 
     }
