@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("oleadb-test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bff61e899f7619dadef602d11b6c1cf63b8ccdd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fb89fda99ba414ecaecdfe7b122e62bef5008c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("oleadb-test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("oleadb-test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
