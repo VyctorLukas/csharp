@@ -28,43 +28,37 @@ class Bee
         {
             desB = b - c;
         }
-        if (b < a)
-        {
-            if (c >= b)
-            {
-                Console.WriteLine(":)");
-            }
-        }
-        else if (b > a)
-        {
-            if (c <= b)
-            {
-                Console.WriteLine(":(");
-            }
-        }
-        if ((b > a && c > b) && (aumB < aumA))
-        {
-           Console.WriteLine(":("); 
-        }
-        if ((b > a && c > b) && (aumB >= aumA))
-        {
-           Console.WriteLine(":)"); 
-        }
-        if ((b < a && c < b) && (desB < desA))
-        {
-            Console.WriteLine(":)");
-        }
-        if ((b < a && c < b) && (desB >= desA))
-        {
-            Console.WriteLine(":(");
-        }
-        if (b == a && c > b)
-        {
-            Console.WriteLine(":)");
-        }
-        if (b == a && c < b)
-        {
-            Console.WriteLine(":(");
-        }
+if (b < a && c >= b)
+{
+    Console.WriteLine(":)");
+}
+else if (b > a && c <= b)
+{
+    Console.WriteLine(":(");
+}
+else if (b > a && c > b && aumB < aumA)
+{
+    Console.WriteLine(":(");
+}
+else if (b > a && c > b && aumB >= aumA)
+{
+    Console.WriteLine(":)");
+}
+else if (b < a && c < b && desB < desA)
+{
+    Console.WriteLine(":)");
+}
+else if (b < a && c < b && desB >= desA)
+{
+    Console.WriteLine(":(");
+}
+else if (b == a && c > b)
+{
+    Console.WriteLine(":)");
+}
+else
+{
+    Console.WriteLine(":(");
+}
     }
 }
