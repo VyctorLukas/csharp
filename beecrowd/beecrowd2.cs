@@ -1,64 +1,30 @@
 using System;
 
-class Bee
+class Mjolnir
 {
-    public static void Main(string[] args)
+    public static void Main (string[] args)
     {
-        int a, b, c, aumA=0, aumB=0, desA=0, desB=0;
+        string name;
+        int strenght;
+        int c = int.Parse(Console.ReadLine());
 
-        string[] partes = Console.ReadLine().Split(' ');
+        for (int i = 0; i < c; i++)
+        {
+            string linha = Console.ReadLine();
+            string [] partes = linha.Split(' ');
 
-        a = int.Parse(partes[0]);
-        b = int.Parse(partes[1]);
-        c = int.Parse(partes[2]);
+            name = partes[0];
+            strenght = int.Parse(partes[1]);
 
-        if (b > a)
-        {
-            aumA = b - a;
+            if (name == "Thor")
+            {
+                Console.WriteLine("Y");
+            }
+            else
+            {
+                Console.WriteLine("N");
+            }
         }
-        else
-        {
-            desA = a - b;
-        }
-        if (c > b)
-        {
-            aumB = c - b;
-        }
-        else
-        {
-            desB = b - c;
-        }
-if (b < a && c >= b)
-{
-    Console.WriteLine(":)");
-}
-else if (b > a && c <= b)
-{
-    Console.WriteLine(":(");
-}
-else if (b > a && c > b && aumB < aumA)
-{
-    Console.WriteLine(":(");
-}
-else if (b > a && c > b && aumB >= aumA)
-{
-    Console.WriteLine(":)");
-}
-else if (b < a && c < b && desB < desA)
-{
-    Console.WriteLine(":)");
-}
-else if (b < a && c < b && desB >= desA)
-{
-    Console.WriteLine(":(");
-}
-else if (b == a && c > b)
-{
-    Console.WriteLine(":)");
-}
-else
-{
-    Console.WriteLine(":(");
-}
+
     }
 }
