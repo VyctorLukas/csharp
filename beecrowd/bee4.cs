@@ -1,31 +1,26 @@
 using System;
+using System.Linq;
 
 class Bee
 {
-    public static void Main (string[] args)
+    public static void Main(string[] args)
     {
-        int n;
+        int n, pos = 1;
 
         n = int.Parse(Console.ReadLine());
 
-        int [] vet = new int [n];
+       int[] m = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-        int min, pos = 0;
+        int men = m[0];
 
-        vet[0] = int.Parse(Console.ReadLine());
-        min = vet[0];
-
-        for (int i = 1; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
-            vet[i] = int.Parse(Console.ReadLine());
-
-            if (vet[i] < min)
+            if (m[i] < men)
             {
-                min = vet[i];
+                men = m[i];
                 pos = i + 1;
             }
         }
-
         Console.WriteLine("{0}", pos);
     }
 }
